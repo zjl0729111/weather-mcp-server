@@ -6,10 +6,10 @@ import requests
 import os
 from datetime import datetime
 from typing import Dict, Any
-from hello_agents.protocols import MCPServer
+from fastmcp import FastMCP
 
 # 创建 MCP 服务器
-weather_server = MCPServer(name="weather-server", description="真实天气查询服务")
+weather_server = FastMCP(name="weather-server", description="真实天气查询服务")
 
 CITY_MAP = {
     "北京": "Beijing", "上海": "Shanghai", "广州": "Guangzhou",
